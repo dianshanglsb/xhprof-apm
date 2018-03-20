@@ -1,6 +1,6 @@
 xhprof-apm
 ====== 
-[PHP7版本](https://github.com/longxinH/xhprof-apm/tree/php7)
+[PHP5版本](https://github.com/longxinH/xhprof-apm/)
 
 xhprof-apm 是一款非侵入式监控平台，基于[xhprof](https://github.com/phacility/xhprof)和[xhgui](https://github.com/perftools/xhgui)。可以方便的查看PHP执行过程，调用次数，CPU和内存使用情况。部署简单方便，不需要修改线上代码，即可开启性能分析。
 
@@ -15,7 +15,7 @@ xhprof-apm 是一款非侵入式监控平台，基于[xhprof](https://github.com
 ![symbol_2](https://github.com/longxinH/xhprof-apm/blob/master/docs/imgs/symbol_2.jpeg)
 
 ### 配置要求
- * PHP 5.3 +
+ * PHP 7.0 +
  * MongoDB 3.0.0 +
  * MongoDB Extension 1.2.6 +
  * 不支持CLI模式
@@ -43,8 +43,8 @@ git clone https://github.com/longxinH/xhprof-apm.git
 ### 扩展安装
 ```
 cd xhprof-apm/extension/
-/path/to/php5/bin/phpize
-./configure --with-php-config=/path/to/php5/bin/php-config
+/path/to/php7/bin/phpize
+./configure --with-php-config=/path/to/php7/bin/php-config
 make && sudo make install
 ```
 
