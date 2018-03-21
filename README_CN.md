@@ -42,7 +42,9 @@ git clone https://github.com/longxinH/xhprof-apm.git
 
 ### 扩展安装
 ```
-cd xhprof-apm/extension/
+cd xhprof-apm
+git checkout origin/php7
+cd extension/
 /path/to/php7/bin/phpize
 ./configure --with-php-config=/path/to/php7/bin/php-config
 make && sudo make install
